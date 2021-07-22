@@ -12,12 +12,6 @@ use Latus\Repositories\EloquentRepository;
 class SettingRepository extends EloquentRepository implements SettingRepositoryContract
 {
 
-    public function __construct(Setting $setting)
-    {
-        parent::__construct($setting);
-    }
-
-
     public function delete(Setting $setting)
     {
         $setting->delete();
