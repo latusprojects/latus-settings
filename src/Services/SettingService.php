@@ -53,4 +53,14 @@ class SettingService
     {
         return $this->settingRepository->findByKey($key);
     }
+
+    public function setSettingValue(Setting $setting, string $value)
+    {
+        $this->settingRepository->setValue($setting, $value);
+    }
+
+    public function getSettingValue(Setting $setting): string
+    {
+        return $this->settingRepository->getValue($setting);
+    }
 }
