@@ -12,6 +12,11 @@ use Latus\Repositories\EloquentRepository;
 class SettingRepository extends EloquentRepository implements SettingRepositoryContract
 {
 
+    public function relatedModel(): Model
+    {
+        return new Setting();
+    }
+
     public function delete(Setting $setting)
     {
         $setting->delete();
