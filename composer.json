@@ -21,8 +21,15 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Latus\\Settings\\SettingsServiceProvider"
+        "Latus\\Settings\\Providers\\SettingsServiceProvider"
       ]
     }
-  }
+  },
+  "repositories": {
+    "0": {
+      "type": "composer",
+      "url": "https://latusprojects.repo.repman.io"
+    }
+  },
+  "minimum-stability": "dev"
 }
