@@ -10,9 +10,7 @@ use Latus\Settings\Models\Setting;
 
 interface SettingRepository extends Repository
 {
-
-    public function __construct(Setting $setting);
-
+    
     public function delete(Setting $setting);
 
     public function getValue(Setting $setting): string;
