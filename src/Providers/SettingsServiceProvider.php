@@ -3,7 +3,7 @@
 namespace Latus\Providers\Settings;
 
 use Illuminate\Support\ServiceProvider;
-use Latus\Plugins\Repositories\Eloquent\SettingRepository;
+use Latus\Settings\Repositories\Eloquent\SettingRepository;
 use Latus\Settings\Repositories\Contracts\SettingRepository as SettingRepositoryContract;
 
 class SettingsServiceProvider extends ServiceProvider

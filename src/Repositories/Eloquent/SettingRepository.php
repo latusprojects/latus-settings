@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Latus\Plugins\Repositories\Eloquent;
+namespace Latus\Settings\Repositories\Eloquent;
 
 
 use Illuminate\Database\Eloquent\Model;
