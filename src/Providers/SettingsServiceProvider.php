@@ -1,6 +1,6 @@
 <?php
 
-namespace Latus\Settings;
+namespace Latus\Providers\Settings;
 
 use Illuminate\Support\ServiceProvider;
 use Latus\Plugins\Repositories\Eloquent\SettingRepository;

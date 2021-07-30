@@ -21,7 +21,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Latus\\Settings\\SettingsServiceProvider"
+        "Latus\\Settings\\Providers\\SettingsServiceProvider"
       ]
     }
   },
