@@ -17,6 +17,10 @@ class Setting extends Model
         'created_at', 'updated_at'
     ];
 
+    protected $attributes = [
+        'value_long' => ''
+    ];
+
     public function getValue()
     {
         return $this->value ?? $this->value_long;
