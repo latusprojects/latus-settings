@@ -14,8 +14,7 @@ class SettingService
 
     public static array $create_validation_rules = [
         'key' => 'required|string|min:5',
-        'value' => 'sometimes|string|max:255|nullable',
-        'value_long' => 'required_if:value,null'
+        'value' => 'sometimes|string|nullable'
     ];
 
     public function __construct(
@@ -34,6 +33,11 @@ class SettingService
 
         if ($validator->fails()) {
             throw new \InvalidArgumentException($validator->errors()->first());
+        }
+
+        if (strlen($attributes['value']) > 255) {
+            $attributes['value_long'] = $attributes['value'];
+            $attributes['value'] = null;
         }
 
         return $this->settingRepository->create($attributes);
