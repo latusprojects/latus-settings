@@ -18,6 +18,13 @@
       "Latus\\Settings\\": "src/"
     }
   },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Latus\\Settings\\Providers\\SettingsServiceProvider"
+      ]
+    }
+  },
   "repositories": {
     "0": {
       "type": "composer",
