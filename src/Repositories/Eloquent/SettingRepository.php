@@ -30,6 +30,7 @@ class SettingRepository extends EloquentRepository implements SettingRepositoryC
     public function setValue(Setting $setting, string $value)
     {
         $setting->setValue($value);
+        $setting->save();
     }
 
     public function findByKey(string $key): Model|null
